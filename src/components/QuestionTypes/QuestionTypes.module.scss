@@ -1,0 +1,15 @@
+@use "../../scss/custom.scss";
+
+.wrapper {
+  height: 90%;
+  display: flex;
+  padding: 0 30px;
+  width: 100%;
+  overflow-y: auto;
+
+  .heading {
+    @include custom.custom-font($size: 30px, $weight: 700);
+    display: grid;
+    justify-content: center;
+  }
+}

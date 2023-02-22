@@ -1,0 +1,98 @@
+@use "../../scss/custom.scss";
+
+.mainWrapper{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.logo {
+  width: 100px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.contentWrapper {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  width: 55rem;
+  height: 30rem;
+}
+.welcomMessage {
+  @include custom.custom-font($size: 30px, $weight: 700);
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.subMessage{
+  font-size: 16px;
+  margin-top: -0.5rem;
+  color: #C8C8C8 ;
+}
+.otpWrapper{
+  width: 22rem;
+  margin: 0 auto;
+  margin-top: -9px;
+  margin-bottom: 2rem;
+}
+.OTPinputStyle{
+  width: 3.5rem !important;
+  height: 3rem;
+  font-size: 1.85rem;
+  border-radius: 15px;
+  padding: 4px 10px;
+  font-weight: 700;
+}
+.forgotOtp{
+  @include custom.custom-font($size: 17px, $weight: 700);
+  display: grid;
+  justify-content: center;
+  margin-top: 0.8rem;
+  text-decoration: underline;
+  margin-bottom: 2.2rem;
+  cursor: pointer;
+}
+
+.customWrapper{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.inpuTWrapper{
+  border: 0.8px solid #C8C8C8;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 20rem;
+  height: 52px;
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.nextBtn{
+  width: 100%;
+}
+
+.spinner{
+  border: 10px solid rgba(0, 0, 0, 0.3); /* #f3f3f3;  Light grey */
+  border-top: 10px solid #BF40BF; /* Blue */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.spinnerWrapper{
+  position: absolute;
+  top: 45%;
+  left: 47%;
+}
+
+.netWorkError{
+  color: red;
+  padding-top:0.5rem;
+}

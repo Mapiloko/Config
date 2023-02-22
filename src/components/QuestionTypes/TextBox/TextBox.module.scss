@@ -1,0 +1,11 @@
+@use "../../../scss/custom.scss";
+
+.name {
+  @include custom.custom-font($size: 18px, $weight: 500, $color: #fff);
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.inputText{
+  width: 100%;
+}

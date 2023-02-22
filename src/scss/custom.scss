@@ -1,0 +1,103 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$btn-primary: #31d98a;
+$purple: #bd0373;
+$brown: #442c4e;
+$deep-blue: #262e54;
+$dark-green: #005a88;
+$mild-green: #4894ba;
+$aqua: #2ed5ff;
+$white: #fff;
+$black: #000;
+
+.default-background {
+  width: 100%;
+  height: 100%;
+  background: transparent
+    linear-gradient(
+      120deg,
+      $purple 0%,
+      $brown 28%,
+      $deep-blue 44%,
+      $dark-green 60%,
+      $mild-green 80%,
+      $aqua 100%
+    )
+    0% 0% no-repeat padding-box;
+  overflow: hidden;
+}
+
+.bg-drop-blur {
+  background: rgba($color: $black, $alpha: 0.4);
+  backdrop-filter: blur(30px);
+}
+
+.btn {
+  background: $btn-primary;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: $black;
+  letter-spacing: 2px;
+  min-width: 300px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@mixin custom-font($size: 20px, $weight: 400, $color: #fff, $transform: none) {
+  font-family: Assistant;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  letter-spacing: 0px;
+  text-transform: $transform;
+}
+.border-line{
+  border-bottom: 5px dashed rgba(0, 0, 0, 0.2);
+  padding-bottom: 1.5rem;
+}
+// Default Body and font style
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  @include custom-font();
+}
+
+//Default input style which will be used across the whole app
+input {
+  border: 0.5px solid rgba($color: #fff, $alpha: 0.65);
+  border-radius: 10px;
+  background-color: rgba($color: #fff, $alpha: 0.05);
+  color: #fff;
+  padding: 12px 15px;
+  font-family: Assistant;
+  min-height: 45px;
+  font-weight: 500;
+  font-size: 18px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: rgba($color: #fff, $alpha: 0.6);
+}
+
+input::-ms-input-placeholder {
+  color: rgba($color: #fff, $alpha: 0.6);
+}
+
+input::-ms-input-placeholder {
+  color: rgba($color: #fff, $alpha: 0.6);
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input:focus-visible {
+  outline: none;
+}

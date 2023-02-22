@@ -1,0 +1,32 @@
+@use "../../scss/custom.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 8px 8px;
+  background: transparent;
+  border-radius: 10px;
+
+  span {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.parentCat {
+  padding: 10px 15px;
+  @include custom.custom-font($weight: 700, $size: 18px);
+}
+
+.subCat {
+  padding: 8px 15px;
+  @include custom.custom-font($size: 16px);
+}
+
+.selected {
+  background: custom.$btn-primary;
+}
+
+.selectedSubCat {
+  background: rgba($color: custom.$btn-primary, $alpha: 0.7) ;
+}

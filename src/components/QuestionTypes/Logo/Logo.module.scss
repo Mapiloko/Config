@@ -1,0 +1,22 @@
+@use "../../../scss/custom.scss";
+
+.name {
+  @include custom.custom-font($size: 18px, $weight: 700, $color: #fff);
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.imageSize{
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.uploadCover{
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 100%;
+  height: 5.5rem;
+  background-color: #0c547c;
+}

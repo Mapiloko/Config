@@ -1,0 +1,41 @@
+@use "../../scss/custom.scss";
+
+.logo {
+  width: 100px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.username {
+  @include custom.custom-font($size: 18px);
+}
+
+.designation {
+  @include custom.custom-font($size: 12px);
+}
+
+.search {
+  min-height: auto;
+  font-size: 14px;
+  max-height: 36px;
+  padding: 8px;
+  width: 75%;
+}
+
+.menuIcon {
+  font-size: 35px !important;
+}
+
+.backDrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba($color: #000000, $alpha: 0.7);
+}

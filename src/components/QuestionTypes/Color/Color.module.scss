@@ -1,0 +1,39 @@
+@use "../../../scss/custom.scss";
+
+.name {
+  @include custom.custom-font($size: 18px, $weight: 700, $color: #fff);
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.checkBoxIcon {
+  // margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba($color: grey, $alpha: 0.4);
+
+  span {
+    font-size: 20px;
+    color: custom.$black;
+  }
+}
+.colorWrapper{
+  display: grid;
+  justify-content: center;
+}
+
+.checkBoxSelected {
+  background-color: custom.$btn-primary;
+}
+
+.selectedColor{
+  border: 1px solid #F8F8FF;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  height: 2rem;
+}

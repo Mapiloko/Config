@@ -1,0 +1,66 @@
+@use "../../scss/custom.scss";
+
+.mainWrapper{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.logo {
+  width: 100px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.contentWrapper {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  width: 55rem;
+  height: 30rem;
+}
+.welcomMessage {
+  @include custom.custom-font($size: 30px, $weight: 700);
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.subMessage{
+  font-size: 16px;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  color: #C8C8C8 ;
+}
+.userName{
+  width: 20rem;
+  border: 0.8px solid #C8C8C8;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.passWordWrapper{
+  border: 0.8px solid #C8C8C8;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 20rem;
+  height: 52px;
+  margin: 0 auto;
+}
+  .passWord{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+  }
+  .forgotPassword{
+    font-size: 16px;
+    color: #C8C8C8 ;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    margin-bottom: 1.8rem;
+  }
+  .nextBtn{
+    width: 100%;
+  }
+  .iconWrap{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
